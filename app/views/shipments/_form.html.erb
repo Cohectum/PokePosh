@@ -1,0 +1,27 @@
+<%= form_with(model: shipment) do |form| %>
+  <% if shipment.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(shipment.errors.count, "error") %> prohibited this shipment from being saved:</h2>
+
+      <ul>
+        <% shipment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :shipment_id, style: "display: block" %>
+    <%= form.text_field :shipment_id %>
+  </div>
+
+  <div>
+    <%= form.label :shipment_date, style: "display: block" %>
+    <%= form.date_field :shipment_date %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
