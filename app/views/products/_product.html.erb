@@ -1,27 +1,16 @@
 <div id="<%= dom_id product %>">
-  <p>
-    <strong>Product:</strong>
-    <%= product.id %>
-  </p>
 
-  <p>
+  <div style="display:flex;justify-content:space-between;margin: 0em 5em">
     <strong>Name:</strong>
     <%= product.name %>
-  </p>
-
-  <p>
     <strong>Description:</strong>
     <%= product.description %>
-  </p>
-
-  <p>
     <strong>Price:</strong>
     <%= product.price %>
-  </p>
-
-  <p>
     <strong>Category:</strong>
     <%= product.category.name %>
-  </p>
+  </div>
+
+
 
 </div>

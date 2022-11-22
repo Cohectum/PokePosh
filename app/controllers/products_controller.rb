@@ -13,6 +13,10 @@ class ProductsController < ApplicationController
     end
   end
 
+  def ensure_cart_exists
+    session[:cart] ||= []
+  end
+
   # GET /products or /products.json
   def index
     @products = Product.order(id: :asc).page(params[:page])
