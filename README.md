@@ -1,24 +1,7 @@
-# README
+## Welcome to PokePosh
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pokeposh is a mock ECommerce Website I am building for my full stack web development course
 
-Things you may want to cover:
+This project is written in Ruby On Rails, and is planned to be finished the week of Dec 16th, 2022
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The main gimmick I am using for this project is customized products, which are a combination of a character and a product
