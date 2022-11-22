@@ -1,5 +1,5 @@
 class ShipmentsController < ApplicationController
-  before_action :set_shipment, only: %i[ show edit update destroy ]
+  before_action :set_shipment, only: %i[show edit update destroy]
 
   # GET /shipments or /shipments.json
   def index
@@ -7,8 +7,7 @@ class ShipmentsController < ApplicationController
   end
 
   # GET /shipments/1 or /shipments/1.json
-  def show
-  end
+  def show; end
 
   # GET /shipments/new
   def new
@@ -16,8 +15,7 @@ class ShipmentsController < ApplicationController
   end
 
   # GET /shipments/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /shipments or /shipments.json
   def create
@@ -25,7 +23,9 @@ class ShipmentsController < ApplicationController
 
     respond_to do |format|
       if @shipment.save
-        format.html { redirect_to shipment_url(@shipment), notice: "Shipment was successfully created." }
+        format.html do
+          redirect_to shipment_url(@shipment), notice: "Shipment was successfully created."
+        end
         format.json { render :show, status: :created, location: @shipment }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,9 @@ class ShipmentsController < ApplicationController
   def update
     respond_to do |format|
       if @shipment.update(shipment_params)
-        format.html { redirect_to shipment_url(@shipment), notice: "Shipment was successfully updated." }
+        format.html do
+          redirect_to shipment_url(@shipment), notice: "Shipment was successfully updated."
+        end
         format.json { render :show, status: :ok, location: @shipment }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -58,13 +60,14 @@ class ShipmentsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_shipment
-      @shipment = Shipment.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def shipment_params
-      params.require(:shipment).permit(:shipment_id, :shipment_date)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_shipment
+    @shipment = Shipment.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def shipment_params
+    params.require(:shipment).permit(:shipment_id, :shipment_date)
+  end
 end

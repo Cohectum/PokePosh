@@ -76,3 +76,5 @@ gem 'devise'
 gem "rest-client"
 gem 'faker'
 gem 'kaminari'
+gem 'rubocop'
+gem 'rubocop-rails'

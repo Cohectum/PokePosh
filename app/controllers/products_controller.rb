@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: %i[ show edit update destroy ]
+  before_action :set_product, only: %i[show edit update destroy]
 
   def search
     if params[:category].blank?
@@ -9,7 +9,8 @@ class ProductsController < ApplicationController
       @results = Product.where(category_id: params[:category]).order(id: :asc).page(params[:page])
     else
       @parameter = params[:search]
-      @results = Product.where(category_id: params[:category]).where("lower(name) LIKE :search", search: "%#{@parameter}%").order(id: :asc).page(params[:page])
+      @results = Product.where(category_id: params[:category]).where("lower(name) LIKE :search",
+                                                                     search: "%#{@parameter}%").order(id: :asc).page(params[:page])
     end
   end
 
@@ -23,8 +24,7 @@ class ProductsController < ApplicationController
   end
 
   # GET /products/1 or /products/1.json
-  def show
-  end
+  def show; end
 
   # GET /products/new
   def new
@@ -32,8 +32,7 @@ class ProductsController < ApplicationController
   end
 
   # GET /products/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /products or /products.json
   def create
@@ -41,7 +40,9 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to product_url(@product), notice: "Product was successfully created." }
+        format.html do
+          redirect_to product_url(@product), notice: "Product was successfully created."
+        end
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -54,7 +55,9 @@ class ProductsController < ApplicationController
   def update
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to product_url(@product), notice: "Product was successfully updated." }
+        format.html do
+          redirect_to product_url(@product), notice: "Product was successfully updated."
+        end
         format.json { render :show, status: :ok, location: @product }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -73,16 +76,15 @@ class ProductsController < ApplicationController
     end
   end
 
-
-
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_product
-      @product = Product.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def product_params
-      params.require(:product).permit(:product_id, :name, :description, :price)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_product
+    @product = Product.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def product_params
+    params.require(:product).permit(:product_id, :name, :description, :price)
+  end
 end

@@ -5,11 +5,8 @@ class CartController < ApplicationController
 
   def add
     new_product_combination = CustomProduct.where(character_id: params[:choice]).where(product_id: params[:id])
-    # @order_product = CustomProduct.where(character_id: params[:choice]).where(product_id: params[:id])
-    # @order_product = CustomProduct.find(params[:product_id])
     quantity = params[:quantity].to_i
-    #
-    if params[:commit] == "Update" && quantity > 0
+    if params[:commit] == "Update" && quantity.positive?
 
       current_order_product = OrderProduct.find(params[:order_product_id])
       current_order_product.update(quantity: quantity)
@@ -24,13 +21,14 @@ class CartController < ApplicationController
 
     elsif params[:commit] == "Add To Cart"
 
-      @cart.order_products.create!(price: new_product_combination[0].price, custom_product: new_product_combination[0], quantity: quantity)
+      @cart.order_products.create!(price: new_product_combination[0].price,
+                                   custom_product: new_product_combination[0], quantity: quantity)
 
     end
 
     respond_to do |format|
       format.turbo_stream do
-        render turbo_stream: [turbo_stream.replace('cart', partial: 'cart/cart', locals: {cart: @cart}),
+        render turbo_stream: [turbo_stream.replace("cart", partial: "cart/cart", locals: { cart: @cart }),
                               turbo_stream.replace(@product)]
       end
     end
@@ -41,7 +39,8 @@ class CartController < ApplicationController
 
     respond_to do |format|
       format.turbo_stream do
-        render turbo_stream: [turbo_stream.replace('cart', partial: 'cart/cart', locals: {cart: @cart}),]
+        render turbo_stream: [turbo_stream.replace("cart", partial: "cart/cart",
+                                                           locals:  { cart: @cart })]
       end
     end
   end
