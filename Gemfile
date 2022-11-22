@@ -75,3 +75,4 @@ gem 'activeadmin'
 gem 'devise'
 gem "rest-client"
 gem 'faker'
+gem 'kaminari'

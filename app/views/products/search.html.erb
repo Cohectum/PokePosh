@@ -1,0 +1,14 @@
+<%= puts @results.count%>
+
+<%= paginate @results%>
+<%= page_entries_info @results %>
+
+<div id="products">
+  <% @results.each do |product| %>
+    <%= render product %>
+    <p>
+      <%= link_to "Show this product", product %>
+    </p>
+  <% end %>
+</div>
+

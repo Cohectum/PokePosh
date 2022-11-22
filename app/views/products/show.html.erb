@@ -1,6 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
+<%= paginate @results%>
+<%= page_entries_info @results %>
 <%= render @product %>
+
+<select>
+  <% Character.all.each do |character|%>
+  <option value=<%= character.id %>>
+    <%= character.name.capitalize %>
+  </option>
+  <% end %>
+</select>
+
 
 <div>
   <%= link_to "Edit this product", edit_product_path(@product) %> |

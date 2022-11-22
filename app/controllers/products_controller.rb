@@ -1,9 +1,21 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
 
+  def search
+    if params[:category].blank?
+      redirect_to products_path and return
+    elsif params[:search].blank?
+      @parameter = params[:category]
+      @results = Product.where(category_id: params[:category]).order(id: :asc).page(params[:page])
+    else
+      @parameter = params[:search]
+      @results = Product.where(category_id: params[:category]).where("lower(name) LIKE :search", search: "%#{@parameter}%").order(id: :asc).page(params[:page])
+    end
+  end
+
   # GET /products or /products.json
   def index
-    @products = Product.all
+    @products = Product.order(id: :asc).page(params[:page])
   end
 
   # GET /products/1 or /products/1.json
@@ -56,6 +68,8 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
