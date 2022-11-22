@@ -9,7 +9,7 @@ class CartController < ApplicationController
     # @order_product = CustomProduct.find(params[:product_id])
     quantity = params[:quantity].to_i
     #
-    if params[:commit] == "Update Quantity"
+    if params[:commit] == "Update" && quantity > 0
 
       current_order_product = OrderProduct.find(params[:order_product_id])
       current_order_product.update(quantity: quantity)
@@ -17,10 +17,9 @@ class CartController < ApplicationController
         current_order_product.update(custom_product_id: new_product_combination[0].id)
       end
 
+    elsif params[:commit] == "Remove" || quantity < 1
 
-    elsif params[:commit] == "Remove" || quantity == 0
-
-      current_order_product = OrderProduct.find(params[:id])
+      current_order_product = OrderProduct.find(params[:order_product_id])
       current_order_product.destroy
 
     elsif params[:commit] == "Add To Cart"
@@ -28,9 +27,22 @@ class CartController < ApplicationController
       @cart.order_products.create!(price: new_product_combination[0].price, custom_product: new_product_combination[0], quantity: quantity)
 
     end
+
+    respond_to do |format|
+      format.turbo_stream do
+        render turbo_stream: [turbo_stream.replace('cart', partial: 'cart/cart', locals: {cart: @cart}),
+                              turbo_stream.replace(@product)]
+      end
+    end
   end
 
   def remove
     OrderProduct.find_by(id: params[:id]).destroy
+
+    respond_to do |format|
+      format.turbo_stream do
+        render turbo_stream: [turbo_stream.replace('cart', partial: 'cart/cart', locals: {cart: @cart}),]
+      end
+    end
   end
 end
