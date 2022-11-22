@@ -327,3 +327,870 @@ Processing by Admin::DashboardController#index as HTML
 Completed 200 OK in 195ms (Views: 183.6ms | ActiveRecord: 0.9ms | Allocations: 14895)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["name", "bulbasaur"], ["created_at", "2022-11-22 02:08:05.865083"], ["updated_at", "2022-11-22 02:08:05.865083"]]
+  [1m[36mTRANSACTION (139.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 2], ["name", "ivysaur"], ["created_at", "2022-11-22 02:08:06.009694"], ["updated_at", "2022-11-22 02:08:06.009694"]]
+  [1m[36mTRANSACTION (115.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 3], ["name", "venusaur"], ["created_at", "2022-11-22 02:08:06.130520"], ["updated_at", "2022-11-22 02:08:06.130520"]]
+  [1m[36mTRANSACTION (116.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 4], ["name", "charmander"], ["created_at", "2022-11-22 02:08:06.252479"], ["updated_at", "2022-11-22 02:08:06.252479"]]
+  [1m[36mTRANSACTION (127.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 5], ["name", "charmeleon"], ["created_at", "2022-11-22 02:08:06.384847"], ["updated_at", "2022-11-22 02:08:06.384847"]]
+  [1m[36mTRANSACTION (116.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 6], ["name", "charizard"], ["created_at", "2022-11-22 02:08:06.506763"], ["updated_at", "2022-11-22 02:08:06.506763"]]
+  [1m[36mTRANSACTION (138.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 7], ["name", "squirtle"], ["created_at", "2022-11-22 02:08:06.650134"], ["updated_at", "2022-11-22 02:08:06.650134"]]
+  [1m[36mTRANSACTION (105.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 8], ["name", "wartortle"], ["created_at", "2022-11-22 02:08:06.761161"], ["updated_at", "2022-11-22 02:08:06.761161"]]
+  [1m[36mTRANSACTION (126.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (41.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 9], ["name", "blastoise"], ["created_at", "2022-11-22 02:08:06.893532"], ["updated_at", "2022-11-22 02:08:06.893532"]]
+  [1m[36mTRANSACTION (121.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 10], ["name", "caterpie"], ["created_at", "2022-11-22 02:08:07.059483"], ["updated_at", "2022-11-22 02:08:07.059483"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 11], ["name", "metapod"], ["created_at", "2022-11-22 02:08:07.191971"], ["updated_at", "2022-11-22 02:08:07.191971"]]
+  [1m[36mTRANSACTION (116.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 12], ["name", "butterfree"], ["created_at", "2022-11-22 02:08:07.313923"], ["updated_at", "2022-11-22 02:08:07.313923"]]
+  [1m[36mTRANSACTION (115.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 13], ["name", "weedle"], ["created_at", "2022-11-22 02:08:07.435114"], ["updated_at", "2022-11-22 02:08:07.435114"]]
+  [1m[36mTRANSACTION (126.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 14], ["name", "kakuna"], ["created_at", "2022-11-22 02:08:07.567432"], ["updated_at", "2022-11-22 02:08:07.567432"]]
+  [1m[36mTRANSACTION (128.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 15], ["name", "beedrill"], ["created_at", "2022-11-22 02:08:07.700747"], ["updated_at", "2022-11-22 02:08:07.700747"]]
+  [1m[36mTRANSACTION (116.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 16], ["name", "pidgey"], ["created_at", "2022-11-22 02:08:07.822212"], ["updated_at", "2022-11-22 02:08:07.822212"]]
+  [1m[36mTRANSACTION (109.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 17], ["name", "pidgeotto"], ["created_at", "2022-11-22 02:08:07.944013"], ["updated_at", "2022-11-22 02:08:07.944013"]]
+  [1m[36mTRANSACTION (105.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 18], ["name", "pidgeot"], ["created_at", "2022-11-22 02:08:08.054362"], ["updated_at", "2022-11-22 02:08:08.054362"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 19], ["name", "rattata"], ["created_at", "2022-11-22 02:08:08.176152"], ["updated_at", "2022-11-22 02:08:08.176152"]]
+  [1m[36mTRANSACTION (138.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 20], ["name", "raticate"], ["created_at", "2022-11-22 02:08:08.319711"], ["updated_at", "2022-11-22 02:08:08.319711"]]
+  [1m[36mTRANSACTION (105.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 21], ["name", "spearow"], ["created_at", "2022-11-22 02:08:08.429879"], ["updated_at", "2022-11-22 02:08:08.429879"]]
+  [1m[36mTRANSACTION (128.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 22], ["name", "fearow"], ["created_at", "2022-11-22 02:08:08.563080"], ["updated_at", "2022-11-22 02:08:08.563080"]]
+  [1m[36mTRANSACTION (105.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 23], ["name", "ekans"], ["created_at", "2022-11-22 02:08:08.673215"], ["updated_at", "2022-11-22 02:08:08.673215"]]
+  [1m[36mTRANSACTION (117.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 24], ["name", "arbok"], ["created_at", "2022-11-22 02:08:08.795145"], ["updated_at", "2022-11-22 02:08:08.795145"]]
+  [1m[36mTRANSACTION (138.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 25], ["name", "pikachu"], ["created_at", "2022-11-22 02:08:08.938556"], ["updated_at", "2022-11-22 02:08:08.938556"]]
+  [1m[36mTRANSACTION (116.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 26], ["name", "raichu"], ["created_at", "2022-11-22 02:08:09.060434"], ["updated_at", "2022-11-22 02:08:09.060434"]]
+  [1m[36mTRANSACTION (115.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 27], ["name", "sandshrew"], ["created_at", "2022-11-22 02:08:09.181892"], ["updated_at", "2022-11-22 02:08:09.181892"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 28], ["name", "sandslash"], ["created_at", "2022-11-22 02:08:09.303692"], ["updated_at", "2022-11-22 02:08:09.303692"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 29], ["name", "nidoran-f"], ["created_at", "2022-11-22 02:08:09.436130"], ["updated_at", "2022-11-22 02:08:09.436130"]]
+  [1m[36mTRANSACTION (127.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 30], ["name", "nidorina"], ["created_at", "2022-11-22 02:08:09.568947"], ["updated_at", "2022-11-22 02:08:09.568947"]]
+  [1m[36mTRANSACTION (171.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 31], ["name", "nidoqueen"], ["created_at", "2022-11-22 02:08:09.745786"], ["updated_at", "2022-11-22 02:08:09.745786"]]
+  [1m[36mTRANSACTION (127.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 32], ["name", "nidoran-m"], ["created_at", "2022-11-22 02:08:09.878133"], ["updated_at", "2022-11-22 02:08:09.878133"]]
+  [1m[36mTRANSACTION (105.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 33], ["name", "nidorino"], ["created_at", "2022-11-22 02:08:09.989006"], ["updated_at", "2022-11-22 02:08:09.989006"]]
+  [1m[36mTRANSACTION (127.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 34], ["name", "nidoking"], ["created_at", "2022-11-22 02:08:10.122004"], ["updated_at", "2022-11-22 02:08:10.122004"]]
+  [1m[36mTRANSACTION (138.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 35], ["name", "clefairy"], ["created_at", "2022-11-22 02:08:10.265543"], ["updated_at", "2022-11-22 02:08:10.265543"]]
+  [1m[36mTRANSACTION (149.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 36], ["name", "clefable"], ["created_at", "2022-11-22 02:08:10.419907"], ["updated_at", "2022-11-22 02:08:10.419907"]]
+  [1m[36mTRANSACTION (149.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 37], ["name", "vulpix"], ["created_at", "2022-11-22 02:08:10.575041"], ["updated_at", "2022-11-22 02:08:10.575041"]]
+  [1m[36mTRANSACTION (138.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 38], ["name", "ninetales"], ["created_at", "2022-11-22 02:08:10.718495"], ["updated_at", "2022-11-22 02:08:10.718495"]]
+  [1m[36mTRANSACTION (149.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 39], ["name", "jigglypuff"], ["created_at", "2022-11-22 02:08:10.873407"], ["updated_at", "2022-11-22 02:08:10.873407"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 40], ["name", "wigglytuff"], ["created_at", "2022-11-22 02:08:11.006134"], ["updated_at", "2022-11-22 02:08:11.006134"]]
+  [1m[36mTRANSACTION (138.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 41], ["name", "zubat"], ["created_at", "2022-11-22 02:08:11.149791"], ["updated_at", "2022-11-22 02:08:11.149791"]]
+  [1m[36mTRANSACTION (149.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 42], ["name", "golbat"], ["created_at", "2022-11-22 02:08:11.304446"], ["updated_at", "2022-11-22 02:08:11.304446"]]
+  [1m[36mTRANSACTION (150.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 43], ["name", "oddish"], ["created_at", "2022-11-22 02:08:11.459516"], ["updated_at", "2022-11-22 02:08:11.459516"]]
+  [1m[36mTRANSACTION (127.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 44], ["name", "gloom"], ["created_at", "2022-11-22 02:08:11.591992"], ["updated_at", "2022-11-22 02:08:11.591992"]]
+  [1m[36mTRANSACTION (138.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 45], ["name", "vileplume"], ["created_at", "2022-11-22 02:08:11.735988"], ["updated_at", "2022-11-22 02:08:11.735988"]]
+  [1m[36mTRANSACTION (149.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 46], ["name", "paras"], ["created_at", "2022-11-22 02:08:11.890785"], ["updated_at", "2022-11-22 02:08:11.890785"]]
+  [1m[36mTRANSACTION (138.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 47], ["name", "parasect"], ["created_at", "2022-11-22 02:08:12.034235"], ["updated_at", "2022-11-22 02:08:12.034235"]]
+  [1m[36mTRANSACTION (901.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (255.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 48], ["name", "venonat"], ["created_at", "2022-11-22 02:08:13.165176"], ["updated_at", "2022-11-22 02:08:13.165176"]]
+  [1m[36mTRANSACTION (800.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (255.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 49], ["name", "venomoth"], ["created_at", "2022-11-22 02:08:14.445916"], ["updated_at", "2022-11-22 02:08:14.445916"]]
+  [1m[36mTRANSACTION (248.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (263.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 50], ["name", "diglett"], ["created_at", "2022-11-22 02:08:14.952228"], ["updated_at", "2022-11-22 02:08:14.952228"]]
+  [1m[36mTRANSACTION (805.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (218.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 51], ["name", "dugtrio"], ["created_at", "2022-11-22 02:08:16.278605"], ["updated_at", "2022-11-22 02:08:16.278605"]]
+  [1m[36mTRANSACTION (795.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (227.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 52], ["name", "meowth"], ["created_at", "2022-11-22 02:08:17.549651"], ["updated_at", "2022-11-22 02:08:17.549651"]]
+  [1m[36mTRANSACTION (809.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (213.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 53], ["name", "persian"], ["created_at", "2022-11-22 02:08:18.588924"], ["updated_at", "2022-11-22 02:08:18.588924"]]
+  [1m[36mTRANSACTION (800.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (254.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 54], ["name", "psyduck"], ["created_at", "2022-11-22 02:08:19.828359"], ["updated_at", "2022-11-22 02:08:19.828359"]]
+  [1m[36mTRANSACTION (805.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (254.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 55], ["name", "golduck"], ["created_at", "2022-11-22 02:08:21.108877"], ["updated_at", "2022-11-22 02:08:21.108877"]]
+  [1m[36mTRANSACTION (802.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (254.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 56], ["name", "mankey"], ["created_at", "2022-11-22 02:08:22.390250"], ["updated_at", "2022-11-22 02:08:22.390250"]]
+  [1m[36mTRANSACTION (804.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (218.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 57], ["name", "primeape"], ["created_at", "2022-11-22 02:08:23.451952"], ["updated_at", "2022-11-22 02:08:23.451952"]]
+  [1m[36mTRANSACTION (796.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (75.4ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 58], ["name", "growlithe"], ["created_at", "2022-11-22 02:08:24.468679"], ["updated_at", "2022-11-22 02:08:24.468679"]]
+  [1m[36mTRANSACTION (132.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 59], ["name", "arcanine"], ["created_at", "2022-11-22 02:08:24.679210"], ["updated_at", "2022-11-22 02:08:24.679210"]]
+  [1m[36mTRANSACTION (105.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (4.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 60], ["name", "poliwag"], ["created_at", "2022-11-22 02:08:24.789671"], ["updated_at", "2022-11-22 02:08:24.789671"]]
+  [1m[36mTRANSACTION (126.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 61], ["name", "poliwhirl"], ["created_at", "2022-11-22 02:08:24.922615"], ["updated_at", "2022-11-22 02:08:24.922615"]]
+  [1m[36mTRANSACTION (138.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 62], ["name", "poliwrath"], ["created_at", "2022-11-22 02:08:25.066212"], ["updated_at", "2022-11-22 02:08:25.066212"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 63], ["name", "abra"], ["created_at", "2022-11-22 02:08:25.198446"], ["updated_at", "2022-11-22 02:08:25.198446"]]
+  [1m[36mTRANSACTION (139.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 64], ["name", "kadabra"], ["created_at", "2022-11-22 02:08:25.342348"], ["updated_at", "2022-11-22 02:08:25.342348"]]
+  [1m[36mTRANSACTION (127.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 65], ["name", "alakazam"], ["created_at", "2022-11-22 02:08:25.474904"], ["updated_at", "2022-11-22 02:08:25.474904"]]
+  [1m[36mTRANSACTION (150.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 66], ["name", "machop"], ["created_at", "2022-11-22 02:08:25.630062"], ["updated_at", "2022-11-22 02:08:25.630062"]]
+  [1m[36mTRANSACTION (149.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 67], ["name", "machoke"], ["created_at", "2022-11-22 02:08:25.784710"], ["updated_at", "2022-11-22 02:08:25.784710"]]
+  [1m[36mTRANSACTION (139.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 68], ["name", "machamp"], ["created_at", "2022-11-22 02:08:25.928631"], ["updated_at", "2022-11-22 02:08:25.928631"]]
+  [1m[36mTRANSACTION (127.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 69], ["name", "bellsprout"], ["created_at", "2022-11-22 02:08:26.061038"], ["updated_at", "2022-11-22 02:08:26.061038"]]
+  [1m[36mTRANSACTION (205.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 70], ["name", "weepinbell"], ["created_at", "2022-11-22 02:08:26.270984"], ["updated_at", "2022-11-22 02:08:26.270984"]]
+  [1m[36mTRANSACTION (183.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 71], ["name", "victreebel"], ["created_at", "2022-11-22 02:08:26.459099"], ["updated_at", "2022-11-22 02:08:26.459099"]]
+  [1m[36mTRANSACTION (127.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 72], ["name", "tentacool"], ["created_at", "2022-11-22 02:08:26.591173"], ["updated_at", "2022-11-22 02:08:26.591173"]]
+  [1m[36mTRANSACTION (150.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.5ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 73], ["name", "tentacruel"], ["created_at", "2022-11-22 02:08:26.746461"], ["updated_at", "2022-11-22 02:08:26.746461"]]
+  [1m[36mTRANSACTION (128.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 74], ["name", "geodude"], ["created_at", "2022-11-22 02:08:26.879030"], ["updated_at", "2022-11-22 02:08:26.879030"]]
+  [1m[36mTRANSACTION (139.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 75], ["name", "graveler"], ["created_at", "2022-11-22 02:08:27.023186"], ["updated_at", "2022-11-22 02:08:27.023186"]]
+  [1m[36mTRANSACTION (264.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (5.4ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 76], ["name", "golem"], ["created_at", "2022-11-22 02:08:27.293148"], ["updated_at", "2022-11-22 02:08:27.293148"]]
+  [1m[36mTRANSACTION (141.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 77], ["name", "ponyta"], ["created_at", "2022-11-22 02:08:27.442693"], ["updated_at", "2022-11-22 02:08:27.442693"]]
+  [1m[36mTRANSACTION (150.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 78], ["name", "rapidash"], ["created_at", "2022-11-22 02:08:27.597805"], ["updated_at", "2022-11-22 02:08:27.597805"]]
+  [1m[36mTRANSACTION (138.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 79], ["name", "slowpoke"], ["created_at", "2022-11-22 02:08:27.741220"], ["updated_at", "2022-11-22 02:08:27.741220"]]
+  [1m[36mTRANSACTION (138.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 80], ["name", "slowbro"], ["created_at", "2022-11-22 02:08:27.885014"], ["updated_at", "2022-11-22 02:08:27.885014"]]
+  [1m[36mTRANSACTION (150.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 81], ["name", "magnemite"], ["created_at", "2022-11-22 02:08:28.040078"], ["updated_at", "2022-11-22 02:08:28.040078"]]
+  [1m[36mTRANSACTION (149.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 82], ["name", "magneton"], ["created_at", "2022-11-22 02:08:28.194781"], ["updated_at", "2022-11-22 02:08:28.194781"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 83], ["name", "farfetchd"], ["created_at", "2022-11-22 02:08:28.327051"], ["updated_at", "2022-11-22 02:08:28.327051"]]
+  [1m[36mTRANSACTION (139.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 84], ["name", "doduo"], ["created_at", "2022-11-22 02:08:28.471107"], ["updated_at", "2022-11-22 02:08:28.471107"]]
+  [1m[36mTRANSACTION (149.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 85], ["name", "dodrio"], ["created_at", "2022-11-22 02:08:28.625790"], ["updated_at", "2022-11-22 02:08:28.625790"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.5ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 86], ["name", "seel"], ["created_at", "2022-11-22 02:08:28.758116"], ["updated_at", "2022-11-22 02:08:28.758116"]]
+  [1m[36mTRANSACTION (172.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 87], ["name", "dewgong"], ["created_at", "2022-11-22 02:08:28.935007"], ["updated_at", "2022-11-22 02:08:28.935007"]]
+  [1m[36mTRANSACTION (150.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 88], ["name", "grimer"], ["created_at", "2022-11-22 02:08:29.090405"], ["updated_at", "2022-11-22 02:08:29.090405"]]
+  [1m[36mTRANSACTION (137.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 89], ["name", "muk"], ["created_at", "2022-11-22 02:08:29.233646"], ["updated_at", "2022-11-22 02:08:29.233646"]]
+  [1m[36mTRANSACTION (150.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 90], ["name", "shellder"], ["created_at", "2022-11-22 02:08:29.388778"], ["updated_at", "2022-11-22 02:08:29.388778"]]
+  [1m[36mTRANSACTION (114.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 91], ["name", "cloyster"], ["created_at", "2022-11-22 02:08:29.509158"], ["updated_at", "2022-11-22 02:08:29.509158"]]
+  [1m[36mTRANSACTION (116.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 92], ["name", "gastly"], ["created_at", "2022-11-22 02:08:29.631027"], ["updated_at", "2022-11-22 02:08:29.631027"]]
+  [1m[36mTRANSACTION (127.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 93], ["name", "haunter"], ["created_at", "2022-11-22 02:08:29.763430"], ["updated_at", "2022-11-22 02:08:29.763430"]]
+  [1m[36mTRANSACTION (138.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 94], ["name", "gengar"], ["created_at", "2022-11-22 02:08:29.907260"], ["updated_at", "2022-11-22 02:08:29.907260"]]
+  [1m[36mTRANSACTION (105.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 95], ["name", "onix"], ["created_at", "2022-11-22 02:08:30.017817"], ["updated_at", "2022-11-22 02:08:30.017817"]]
+  [1m[36mTRANSACTION (127.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 96], ["name", "drowzee"], ["created_at", "2022-11-22 02:08:30.150661"], ["updated_at", "2022-11-22 02:08:30.150661"]]
+  [1m[36mTRANSACTION (149.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 97], ["name", "hypno"], ["created_at", "2022-11-22 02:08:30.305174"], ["updated_at", "2022-11-22 02:08:30.305174"]]
+  [1m[36mTRANSACTION (138.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 98], ["name", "krabby"], ["created_at", "2022-11-22 02:08:30.448987"], ["updated_at", "2022-11-22 02:08:30.448987"]]
+  [1m[36mTRANSACTION (128.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 99], ["name", "kingler"], ["created_at", "2022-11-22 02:08:30.581666"], ["updated_at", "2022-11-22 02:08:30.581666"]]
+  [1m[36mTRANSACTION (105.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 100], ["name", "voltorb"], ["created_at", "2022-11-22 02:08:30.692046"], ["updated_at", "2022-11-22 02:08:30.692046"]]
+  [1m[36mTRANSACTION (127.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 101], ["name", "electrode"], ["created_at", "2022-11-22 02:08:30.824777"], ["updated_at", "2022-11-22 02:08:30.824777"]]
+  [1m[36mTRANSACTION (127.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 102], ["name", "exeggcute"], ["created_at", "2022-11-22 02:08:30.957222"], ["updated_at", "2022-11-22 02:08:30.957222"]]
+  [1m[36mTRANSACTION (105.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 103], ["name", "exeggutor"], ["created_at", "2022-11-22 02:08:31.068331"], ["updated_at", "2022-11-22 02:08:31.068331"]]
+  [1m[36mTRANSACTION (116.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 104], ["name", "cubone"], ["created_at", "2022-11-22 02:08:31.189639"], ["updated_at", "2022-11-22 02:08:31.189639"]]
+  [1m[36mTRANSACTION (116.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 105], ["name", "marowak"], ["created_at", "2022-11-22 02:08:31.311390"], ["updated_at", "2022-11-22 02:08:31.311390"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 106], ["name", "hitmonlee"], ["created_at", "2022-11-22 02:08:31.443559"], ["updated_at", "2022-11-22 02:08:31.443559"]]
+  [1m[36mTRANSACTION (116.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 107], ["name", "hitmonchan"], ["created_at", "2022-11-22 02:08:31.565120"], ["updated_at", "2022-11-22 02:08:31.565120"]]
+  [1m[36mTRANSACTION (116.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 108], ["name", "lickitung"], ["created_at", "2022-11-22 02:08:31.687141"], ["updated_at", "2022-11-22 02:08:31.687141"]]
+  [1m[36mTRANSACTION (105.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 109], ["name", "koffing"], ["created_at", "2022-11-22 02:08:31.797436"], ["updated_at", "2022-11-22 02:08:31.797436"]]
+  [1m[36mTRANSACTION (116.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 110], ["name", "weezing"], ["created_at", "2022-11-22 02:08:31.919440"], ["updated_at", "2022-11-22 02:08:31.919440"]]
+  [1m[36mTRANSACTION (138.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 111], ["name", "rhyhorn"], ["created_at", "2022-11-22 02:08:32.062937"], ["updated_at", "2022-11-22 02:08:32.062937"]]
+  [1m[36mTRANSACTION (104.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 112], ["name", "rhydon"], ["created_at", "2022-11-22 02:08:32.173240"], ["updated_at", "2022-11-22 02:08:32.173240"]]
+  [1m[36mTRANSACTION (149.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 113], ["name", "chansey"], ["created_at", "2022-11-22 02:08:32.328152"], ["updated_at", "2022-11-22 02:08:32.328152"]]
+  [1m[36mTRANSACTION (879.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (252.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 114], ["name", "tangela"], ["created_at", "2022-11-22 02:08:33.435698"], ["updated_at", "2022-11-22 02:08:33.435698"]]
+  [1m[36mTRANSACTION (802.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (1.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["name", "bulbasaur"], ["created_at", "2022-11-22 02:09:32.194787"], ["updated_at", "2022-11-22 02:09:32.194787"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (627.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (116.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20221121225943)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "title" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121225943"]]
+  [1m[36mTRANSACTION (115.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrders (20221121230136)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "order_date" date, "order_subtotal" decimal, "order_tax_rate" decimal, "order_total" decimal, "order_state" varchar, "order_address" varchar, "order_postal_code" varchar, "order_province" varchar, "order_tracking_number" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230136"]]
+  [1m[36mTRANSACTION (163.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateShipments (20221121230224)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "shipments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "shipment_date" date, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230224"]]
+  [1m[36mTRANSACTION (110.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20221121230417)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230417"]]
+  [1m[36mTRANSACTION (120.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCharacters (20221121230518)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "characters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230518"]]
+  [1m[36mTRANSACTION (143.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCustomProducts (20221121230624)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "custom_products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230624"]]
+  [1m[36mTRANSACTION (109.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrderProducts (20221121230734)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "order_products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230734"]]
+  [1m[36mTRANSACTION (120.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateAdminUsers (20221122000152)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221122000152"]]
+  [1m[36mTRANSACTION (118.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveAdminComments (20221122000200)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "active_admin_comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "namespace" varchar, "body" text, "resource_type" varchar, "resource_id" integer, "author_type" varchar, "author_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_admin_comments_on_resource" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_admin_comments_on_author" ON "active_admin_comments" ("author_type", "author_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221122000200"]]
+  [1m[36mTRANSACTION (152.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-22 02:10:49.858585"], ["updated_at", "2022-11-22 02:10:49.858585"]]
+  [1m[36mTRANSACTION (126.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["name", "bulbasaur"], ["created_at", "2022-11-22 02:12:33.021891"], ["updated_at", "2022-11-22 02:12:33.021891"]]
+  [1m[36mTRANSACTION (126.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 2], ["name", "ivysaur"], ["created_at", "2022-11-22 02:12:33.154192"], ["updated_at", "2022-11-22 02:12:33.154192"]]
+  [1m[36mTRANSACTION (116.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (4.4ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 3], ["name", "venusaur"], ["created_at", "2022-11-22 02:12:33.275434"], ["updated_at", "2022-11-22 02:12:33.275434"]]
+  [1m[36mTRANSACTION (114.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 4], ["name", "charmander"], ["created_at", "2022-11-22 02:12:33.397392"], ["updated_at", "2022-11-22 02:12:33.397392"]]
+  [1m[36mTRANSACTION (115.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.5ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 5], ["name", "charmeleon"], ["created_at", "2022-11-22 02:12:33.518889"], ["updated_at", "2022-11-22 02:12:33.518889"]]
+  [1m[36mTRANSACTION (115.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 6], ["name", "charizard"], ["created_at", "2022-11-22 02:12:33.640100"], ["updated_at", "2022-11-22 02:12:33.640100"]]
+  [1m[36mTRANSACTION (149.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 7], ["name", "squirtle"], ["created_at", "2022-11-22 02:12:33.795165"], ["updated_at", "2022-11-22 02:12:33.795165"]]
+  [1m[36mTRANSACTION (104.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 8], ["name", "wartortle"], ["created_at", "2022-11-22 02:12:33.905163"], ["updated_at", "2022-11-22 02:12:33.905163"]]
+  [1m[36mTRANSACTION (105.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 9], ["name", "blastoise"], ["created_at", "2022-11-22 02:12:34.016137"], ["updated_at", "2022-11-22 02:12:34.016137"]]
+  [1m[36mTRANSACTION (104.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 10], ["name", "caterpie"], ["created_at", "2022-11-22 02:12:34.126511"], ["updated_at", "2022-11-22 02:12:34.126511"]]
+  [1m[36mTRANSACTION (148.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.4ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 11], ["name", "metapod"], ["created_at", "2022-11-22 02:12:34.281503"], ["updated_at", "2022-11-22 02:12:34.281503"]]
+  [1m[36mTRANSACTION (171.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 12], ["name", "butterfree"], ["created_at", "2022-11-22 02:12:34.458095"], ["updated_at", "2022-11-22 02:12:34.458095"]]
+  [1m[36mTRANSACTION (116.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 13], ["name", "weedle"], ["created_at", "2022-11-22 02:12:34.580802"], ["updated_at", "2022-11-22 02:12:34.580802"]]
+  [1m[36mTRANSACTION (125.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 14], ["name", "kakuna"], ["created_at", "2022-11-22 02:12:34.712490"], ["updated_at", "2022-11-22 02:12:34.712490"]]
+  [1m[36mTRANSACTION (127.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (7.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 15], ["name", "beedrill"], ["created_at", "2022-11-22 02:12:34.847040"], ["updated_at", "2022-11-22 02:12:34.847040"]]
+  [1m[36mTRANSACTION (127.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 16], ["name", "pidgey"], ["created_at", "2022-11-22 02:12:34.989087"], ["updated_at", "2022-11-22 02:12:34.989087"]]
+  [1m[36mTRANSACTION (104.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 17], ["name", "pidgeotto"], ["created_at", "2022-11-22 02:12:35.099077"], ["updated_at", "2022-11-22 02:12:35.099077"]]
+  [1m[36mTRANSACTION (117.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 18], ["name", "pidgeot"], ["created_at", "2022-11-22 02:12:35.221193"], ["updated_at", "2022-11-22 02:12:35.221193"]]
+  [1m[36mTRANSACTION (127.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 19], ["name", "rattata"], ["created_at", "2022-11-22 02:12:35.353368"], ["updated_at", "2022-11-22 02:12:35.353368"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 20], ["name", "raticate"], ["created_at", "2022-11-22 02:12:35.474852"], ["updated_at", "2022-11-22 02:12:35.474852"]]
+  [1m[36mTRANSACTION (150.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 21], ["name", "spearow"], ["created_at", "2022-11-22 02:12:35.629760"], ["updated_at", "2022-11-22 02:12:35.629760"]]
+  [1m[36mTRANSACTION (172.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 22], ["name", "fearow"], ["created_at", "2022-11-22 02:12:35.807203"], ["updated_at", "2022-11-22 02:12:35.807203"]]
+  [1m[36mTRANSACTION (126.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 23], ["name", "ekans"], ["created_at", "2022-11-22 02:12:35.939459"], ["updated_at", "2022-11-22 02:12:35.939459"]]
+  [1m[36mTRANSACTION (116.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 24], ["name", "arbok"], ["created_at", "2022-11-22 02:12:36.061147"], ["updated_at", "2022-11-22 02:12:36.061147"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 25], ["name", "pikachu"], ["created_at", "2022-11-22 02:12:36.193835"], ["updated_at", "2022-11-22 02:12:36.193835"]]
+  [1m[36mTRANSACTION (160.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 26], ["name", "raichu"], ["created_at", "2022-11-22 02:12:36.359597"], ["updated_at", "2022-11-22 02:12:36.359597"]]
+  [1m[36mTRANSACTION (120.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 27], ["name", "sandshrew"], ["created_at", "2022-11-22 02:12:36.491979"], ["updated_at", "2022-11-22 02:12:36.491979"]]
+  [1m[36mTRANSACTION (868.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (254.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 28], ["name", "sandslash"], ["created_at", "2022-11-22 02:12:37.585809"], ["updated_at", "2022-11-22 02:12:37.585809"]]
+  [1m[36mTRANSACTION (804.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (254.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 29], ["name", "nidoran-f"], ["created_at", "2022-11-22 02:12:38.866596"], ["updated_at", "2022-11-22 02:12:38.866596"]]
+  [1m[36mTRANSACTION (353.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (157.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 30], ["name", "nidorina"], ["created_at", "2022-11-22 02:12:39.477337"], ["updated_at", "2022-11-22 02:12:39.477337"]]
+  [1m[36mTRANSACTION (800.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (222.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 31], ["name", "nidoqueen"], ["created_at", "2022-11-22 02:12:40.692601"], ["updated_at", "2022-11-22 02:12:40.692601"]]
+  [1m[36mTRANSACTION (803.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (219.5ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 32], ["name", "nidoran-m"], ["created_at", "2022-11-22 02:12:41.720676"], ["updated_at", "2022-11-22 02:12:41.720676"]]
+  [1m[36mTRANSACTION (805.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (255.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 33], ["name", "nidorino"], ["created_at", "2022-11-22 02:12:42.966586"], ["updated_at", "2022-11-22 02:12:42.966586"]]
+  [1m[36mTRANSACTION (806.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (215.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 34], ["name", "nidoking"], ["created_at", "2022-11-22 02:12:44.031074"], ["updated_at", "2022-11-22 02:12:44.031074"]]
+  [1m[36mTRANSACTION (245.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (8.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 35], ["name", "clefairy"], ["created_at", "2022-11-22 02:12:44.494876"], ["updated_at", "2022-11-22 02:12:44.494876"]]
+  [1m[36mTRANSACTION (801.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (254.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 36], ["name", "clefable"], ["created_at", "2022-11-22 02:12:45.529006"], ["updated_at", "2022-11-22 02:12:45.529006"]]
+  [1m[36mTRANSACTION (222.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 37], ["name", "vulpix"], ["created_at", "2022-11-22 02:12:46.008991"], ["updated_at", "2022-11-22 02:12:46.008991"]]
+  [1m[36mTRANSACTION (138.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 38], ["name", "ninetales"], ["created_at", "2022-11-22 02:12:46.152617"], ["updated_at", "2022-11-22 02:12:46.152617"]]
+  [1m[36mTRANSACTION (106.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 39], ["name", "jigglypuff"], ["created_at", "2022-11-22 02:12:46.263630"], ["updated_at", "2022-11-22 02:12:46.263630"]]
+  [1m[36mTRANSACTION (116.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 40], ["name", "wigglytuff"], ["created_at", "2022-11-22 02:12:46.384675"], ["updated_at", "2022-11-22 02:12:46.384675"]]
+  [1m[36mTRANSACTION (150.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 41], ["name", "zubat"], ["created_at", "2022-11-22 02:12:46.539695"], ["updated_at", "2022-11-22 02:12:46.539695"]]
+  [1m[36mTRANSACTION (116.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 42], ["name", "golbat"], ["created_at", "2022-11-22 02:12:46.661139"], ["updated_at", "2022-11-22 02:12:46.661139"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (4.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 43], ["name", "oddish"], ["created_at", "2022-11-22 02:12:46.782417"], ["updated_at", "2022-11-22 02:12:46.782417"]]
+  [1m[36mTRANSACTION (137.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.5ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 44], ["name", "gloom"], ["created_at", "2022-11-22 02:12:46.926818"], ["updated_at", "2022-11-22 02:12:46.926818"]]
+  [1m[36mTRANSACTION (150.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 45], ["name", "vileplume"], ["created_at", "2022-11-22 02:12:47.081488"], ["updated_at", "2022-11-22 02:12:47.081488"]]
+  [1m[36mTRANSACTION (127.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 46], ["name", "paras"], ["created_at", "2022-11-22 02:12:47.213880"], ["updated_at", "2022-11-22 02:12:47.213880"]]
+  [1m[36mTRANSACTION (105.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 47], ["name", "parasect"], ["created_at", "2022-11-22 02:12:47.324536"], ["updated_at", "2022-11-22 02:12:47.324536"]]
+  [1m[36mTRANSACTION (116.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 48], ["name", "venonat"], ["created_at", "2022-11-22 02:12:47.445887"], ["updated_at", "2022-11-22 02:12:47.445887"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (257.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 49], ["name", "venomoth"], ["created_at", "2022-11-22 02:12:47.578315"], ["updated_at", "2022-11-22 02:12:47.578315"]]
+  [1m[36mTRANSACTION (802.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (220.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 50], ["name", "diglett"], ["created_at", "2022-11-22 02:12:48.640148"], ["updated_at", "2022-11-22 02:12:48.640148"]]
+  [1m[36mTRANSACTION (672.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (93.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 51], ["name", "dugtrio"], ["created_at", "2022-11-22 02:12:49.535263"], ["updated_at", "2022-11-22 02:12:49.535263"]]
+  [1m[36mTRANSACTION (810.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (212.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 52], ["name", "meowth"], ["created_at", "2022-11-22 02:12:50.441496"], ["updated_at", "2022-11-22 02:12:50.441496"]]
+  [1m[36mTRANSACTION (801.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (151.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 53], ["name", "persian"], ["created_at", "2022-11-22 02:12:51.713012"], ["updated_at", "2022-11-22 02:12:51.713012"]]
+  [1m[36mTRANSACTION (1350.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (72.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 54], ["name", "psyduck"], ["created_at", "2022-11-22 02:12:53.217231"], ["updated_at", "2022-11-22 02:12:53.217231"]]
+  [1m[36mTRANSACTION (188.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 55], ["name", "golduck"], ["created_at", "2022-11-22 02:12:53.481346"], ["updated_at", "2022-11-22 02:12:53.481346"]]
+  [1m[36mTRANSACTION (138.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 56], ["name", "mankey"], ["created_at", "2022-11-22 02:12:53.624818"], ["updated_at", "2022-11-22 02:12:53.624818"]]
+  [1m[36mTRANSACTION (128.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 57], ["name", "primeape"], ["created_at", "2022-11-22 02:12:53.757812"], ["updated_at", "2022-11-22 02:12:53.757812"]]
+  [1m[36mTRANSACTION (105.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 58], ["name", "growlithe"], ["created_at", "2022-11-22 02:12:53.867934"], ["updated_at", "2022-11-22 02:12:53.867934"]]
+  [1m[36mTRANSACTION (117.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 59], ["name", "arcanine"], ["created_at", "2022-11-22 02:12:53.990086"], ["updated_at", "2022-11-22 02:12:53.990086"]]
+  [1m[36mTRANSACTION (105.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.8ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 60], ["name", "poliwag"], ["created_at", "2022-11-22 02:12:54.100482"], ["updated_at", "2022-11-22 02:12:54.100482"]]
+  [1m[36mTRANSACTION (117.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 61], ["name", "poliwhirl"], ["created_at", "2022-11-22 02:12:54.222735"], ["updated_at", "2022-11-22 02:12:54.222735"]]
+  [1m[36mTRANSACTION (138.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 62], ["name", "poliwrath"], ["created_at", "2022-11-22 02:12:54.365734"], ["updated_at", "2022-11-22 02:12:54.365734"]]
+  [1m[36mTRANSACTION (116.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.5ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 63], ["name", "abra"], ["created_at", "2022-11-22 02:12:54.487232"], ["updated_at", "2022-11-22 02:12:54.487232"]]
+  [1m[36mTRANSACTION (117.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 64], ["name", "kadabra"], ["created_at", "2022-11-22 02:12:54.609007"], ["updated_at", "2022-11-22 02:12:54.609007"]]
+  [1m[36mTRANSACTION (116.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 65], ["name", "alakazam"], ["created_at", "2022-11-22 02:12:54.730426"], ["updated_at", "2022-11-22 02:12:54.730426"]]
+  [1m[36mTRANSACTION (117.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.5ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 66], ["name", "machop"], ["created_at", "2022-11-22 02:12:54.852319"], ["updated_at", "2022-11-22 02:12:54.852319"]]
+  [1m[36mTRANSACTION (204.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 67], ["name", "machoke"], ["created_at", "2022-11-22 02:12:55.061947"], ["updated_at", "2022-11-22 02:12:55.061947"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 68], ["name", "machamp"], ["created_at", "2022-11-22 02:12:55.194193"], ["updated_at", "2022-11-22 02:12:55.194193"]]
+  [1m[36mTRANSACTION (117.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 69], ["name", "bellsprout"], ["created_at", "2022-11-22 02:12:55.316116"], ["updated_at", "2022-11-22 02:12:55.316116"]]
+  [1m[36mTRANSACTION (116.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 70], ["name", "weepinbell"], ["created_at", "2022-11-22 02:12:55.437261"], ["updated_at", "2022-11-22 02:12:55.437261"]]
+  [1m[36mTRANSACTION (128.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 71], ["name", "victreebel"], ["created_at", "2022-11-22 02:12:55.570448"], ["updated_at", "2022-11-22 02:12:55.570448"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 72], ["name", "tentacool"], ["created_at", "2022-11-22 02:12:55.691689"], ["updated_at", "2022-11-22 02:12:55.691689"]]
+  [1m[36mTRANSACTION (106.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 73], ["name", "tentacruel"], ["created_at", "2022-11-22 02:12:55.802769"], ["updated_at", "2022-11-22 02:12:55.802769"]]
+  [1m[36mTRANSACTION (105.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 74], ["name", "geodude"], ["created_at", "2022-11-22 02:12:55.912920"], ["updated_at", "2022-11-22 02:12:55.912920"]]
+  [1m[36mTRANSACTION (127.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (5.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 75], ["name", "graveler"], ["created_at", "2022-11-22 02:12:56.045374"], ["updated_at", "2022-11-22 02:12:56.045374"]]
+  [1m[36mTRANSACTION (125.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 76], ["name", "golem"], ["created_at", "2022-11-22 02:12:56.178488"], ["updated_at", "2022-11-22 02:12:56.178488"]]
+  [1m[36mTRANSACTION (138.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.7ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 77], ["name", "ponyta"], ["created_at", "2022-11-22 02:12:56.322179"], ["updated_at", "2022-11-22 02:12:56.322179"]]
+  [1m[36mTRANSACTION (275.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 78], ["name", "rapidash"], ["created_at", "2022-11-22 02:12:56.602102"], ["updated_at", "2022-11-22 02:12:56.602102"]]
+  [1m[36mTRANSACTION (135.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 79], ["name", "slowpoke"], ["created_at", "2022-11-22 02:12:56.742224"], ["updated_at", "2022-11-22 02:12:56.742224"]]
+  [1m[36mTRANSACTION (138.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 80], ["name", "slowbro"], ["created_at", "2022-11-22 02:12:56.886141"], ["updated_at", "2022-11-22 02:12:56.886141"]]
+  [1m[36mTRANSACTION (116.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 81], ["name", "magnemite"], ["created_at", "2022-11-22 02:12:57.007562"], ["updated_at", "2022-11-22 02:12:57.007562"]]
+  [1m[36mTRANSACTION (116.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 82], ["name", "magneton"], ["created_at", "2022-11-22 02:12:57.129375"], ["updated_at", "2022-11-22 02:12:57.129375"]]
+  [1m[36mTRANSACTION (127.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 83], ["name", "farfetchd"], ["created_at", "2022-11-22 02:12:57.261839"], ["updated_at", "2022-11-22 02:12:57.261839"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.4ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 84], ["name", "doduo"], ["created_at", "2022-11-22 02:12:57.383811"], ["updated_at", "2022-11-22 02:12:57.383811"]]
+  [1m[36mTRANSACTION (137.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 85], ["name", "dodrio"], ["created_at", "2022-11-22 02:12:57.527109"], ["updated_at", "2022-11-22 02:12:57.527109"]]
+  [1m[36mTRANSACTION (149.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 86], ["name", "seel"], ["created_at", "2022-11-22 02:12:57.682014"], ["updated_at", "2022-11-22 02:12:57.682014"]]
+  [1m[36mTRANSACTION (104.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 87], ["name", "dewgong"], ["created_at", "2022-11-22 02:12:57.792273"], ["updated_at", "2022-11-22 02:12:57.792273"]]
+  [1m[36mTRANSACTION (116.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 88], ["name", "grimer"], ["created_at", "2022-11-22 02:12:57.914272"], ["updated_at", "2022-11-22 02:12:57.914272"]]
+  [1m[36mTRANSACTION (105.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 89], ["name", "muk"], ["created_at", "2022-11-22 02:12:58.024684"], ["updated_at", "2022-11-22 02:12:58.024684"]]
+  [1m[36mTRANSACTION (116.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 90], ["name", "shellder"], ["created_at", "2022-11-22 02:12:58.146650"], ["updated_at", "2022-11-22 02:12:58.146650"]]
+  [1m[36mTRANSACTION (126.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 91], ["name", "cloyster"], ["created_at", "2022-11-22 02:12:58.278642"], ["updated_at", "2022-11-22 02:12:58.278642"]]
+  [1m[36mTRANSACTION (138.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 92], ["name", "gastly"], ["created_at", "2022-11-22 02:12:58.422769"], ["updated_at", "2022-11-22 02:12:58.422769"]]
+  [1m[36mTRANSACTION (115.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 93], ["name", "haunter"], ["created_at", "2022-11-22 02:12:58.543974"], ["updated_at", "2022-11-22 02:12:58.543974"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 94], ["name", "gengar"], ["created_at", "2022-11-22 02:12:58.665941"], ["updated_at", "2022-11-22 02:12:58.665941"]]
+  [1m[36mTRANSACTION (127.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 95], ["name", "onix"], ["created_at", "2022-11-22 02:12:58.798587"], ["updated_at", "2022-11-22 02:12:58.798587"]]
+  [1m[36mTRANSACTION (127.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 96], ["name", "drowzee"], ["created_at", "2022-11-22 02:12:58.931492"], ["updated_at", "2022-11-22 02:12:58.931492"]]
+  [1m[36mTRANSACTION (126.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 97], ["name", "hypno"], ["created_at", "2022-11-22 02:12:59.063753"], ["updated_at", "2022-11-22 02:12:59.063753"]]
+  [1m[36mTRANSACTION (105.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 98], ["name", "krabby"], ["created_at", "2022-11-22 02:12:59.174526"], ["updated_at", "2022-11-22 02:12:59.174526"]]
+  [1m[36mTRANSACTION (115.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 99], ["name", "kingler"], ["created_at", "2022-11-22 02:12:59.295851"], ["updated_at", "2022-11-22 02:12:59.295851"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 100], ["name", "voltorb"], ["created_at", "2022-11-22 02:12:59.428719"], ["updated_at", "2022-11-22 02:12:59.428719"]]
+  [1m[36mTRANSACTION (104.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 101], ["name", "electrode"], ["created_at", "2022-11-22 02:12:59.538997"], ["updated_at", "2022-11-22 02:12:59.538997"]]
+  [1m[36mTRANSACTION (116.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 102], ["name", "exeggcute"], ["created_at", "2022-11-22 02:12:59.660884"], ["updated_at", "2022-11-22 02:12:59.660884"]]
+  [1m[36mTRANSACTION (137.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 103], ["name", "exeggutor"], ["created_at", "2022-11-22 02:12:59.804117"], ["updated_at", "2022-11-22 02:12:59.804117"]]
+  [1m[36mTRANSACTION (127.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 104], ["name", "cubone"], ["created_at", "2022-11-22 02:12:59.937358"], ["updated_at", "2022-11-22 02:12:59.937358"]]
+  [1m[36mTRANSACTION (126.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 105], ["name", "marowak"], ["created_at", "2022-11-22 02:13:00.069753"], ["updated_at", "2022-11-22 02:13:00.069753"]]
+  [1m[36mTRANSACTION (116.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 106], ["name", "hitmonlee"], ["created_at", "2022-11-22 02:13:00.191335"], ["updated_at", "2022-11-22 02:13:00.191335"]]
+  [1m[36mTRANSACTION (105.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (2.9ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 107], ["name", "hitmonchan"], ["created_at", "2022-11-22 02:13:00.301789"], ["updated_at", "2022-11-22 02:13:00.301789"]]
+  [1m[36mTRANSACTION (116.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 108], ["name", "lickitung"], ["created_at", "2022-11-22 02:13:00.423285"], ["updated_at", "2022-11-22 02:13:00.423285"]]
+  [1m[36mTRANSACTION (127.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 109], ["name", "koffing"], ["created_at", "2022-11-22 02:13:00.556688"], ["updated_at", "2022-11-22 02:13:00.556688"]]
+  [1m[36mTRANSACTION (115.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (30.6ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 110], ["name", "weezing"], ["created_at", "2022-11-22 02:13:00.678031"], ["updated_at", "2022-11-22 02:13:00.678031"]]
+  [1m[36mTRANSACTION (143.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (5.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 111], ["name", "rhyhorn"], ["created_at", "2022-11-22 02:13:00.855194"], ["updated_at", "2022-11-22 02:13:00.855194"]]
+  [1m[36mTRANSACTION (102.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 112], ["name", "rhydon"], ["created_at", "2022-11-22 02:13:00.965469"], ["updated_at", "2022-11-22 02:13:00.965469"]]
+  [1m[36mTRANSACTION (746.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (255.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 113], ["name", "chansey"], ["created_at", "2022-11-22 02:13:01.944444"], ["updated_at", "2022-11-22 02:13:01.944444"]]
+  [1m[36mTRANSACTION (808.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (255.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 114], ["name", "tangela"], ["created_at", "2022-11-22 02:13:03.225684"], ["updated_at", "2022-11-22 02:13:03.225684"]]
+  [1m[36mTRANSACTION (809.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (224.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 115], ["name", "kangaskhan"], ["created_at", "2022-11-22 02:13:04.292754"], ["updated_at", "2022-11-22 02:13:04.292754"]]
+  [1m[36mTRANSACTION (790.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (222.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 116], ["name", "horsea"], ["created_at", "2022-11-22 02:13:05.309561"], ["updated_at", "2022-11-22 02:13:05.309561"]]
+  [1m[36mTRANSACTION (825.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (198.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 117], ["name", "seadra"], ["created_at", "2022-11-22 02:13:06.359736"], ["updated_at", "2022-11-22 02:13:06.359736"]]
+  [1m[36mTRANSACTION (804.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (217.4ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 118], ["name", "goldeen"], ["created_at", "2022-11-22 02:13:07.365312"], ["updated_at", "2022-11-22 02:13:07.365312"]]
+  [1m[36mTRANSACTION (808.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (63.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 119], ["name", "seaking"], ["created_at", "2022-11-22 02:13:08.393317"], ["updated_at", "2022-11-22 02:13:08.393317"]]
+  [1m[36mTRANSACTION (1725.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (73.5ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 120], ["name", "staryu"], ["created_at", "2022-11-22 02:13:10.184121"], ["updated_at", "2022-11-22 02:13:10.184121"]]
+  [1m[36mTRANSACTION (212.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 121], ["name", "starmie"], ["created_at", "2022-11-22 02:13:10.472178"], ["updated_at", "2022-11-22 02:13:10.472178"]]
+  [1m[36mTRANSACTION (181.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 122], ["name", "mr-mime"], ["created_at", "2022-11-22 02:13:10.659378"], ["updated_at", "2022-11-22 02:13:10.659378"]]
+  [1m[36mTRANSACTION (115.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.4ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 123], ["name", "scyther"], ["created_at", "2022-11-22 02:13:10.780588"], ["updated_at", "2022-11-22 02:13:10.780588"]]
+  [1m[36mTRANSACTION (135.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 124], ["name", "jynx"], ["created_at", "2022-11-22 02:13:10.924355"], ["updated_at", "2022-11-22 02:13:10.924355"]]
+  [1m[36mTRANSACTION (104.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 125], ["name", "electabuzz"], ["created_at", "2022-11-22 02:13:11.034674"], ["updated_at", "2022-11-22 02:13:11.034674"]]
+  [1m[36mTRANSACTION (116.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 126], ["name", "magmar"], ["created_at", "2022-11-22 02:13:11.156755"], ["updated_at", "2022-11-22 02:13:11.156755"]]
+  [1m[36mTRANSACTION (182.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 127], ["name", "pinsir"], ["created_at", "2022-11-22 02:13:11.344376"], ["updated_at", "2022-11-22 02:13:11.344376"]]
+  [1m[36mTRANSACTION (104.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 128], ["name", "tauros"], ["created_at", "2022-11-22 02:13:11.454547"], ["updated_at", "2022-11-22 02:13:11.454547"]]
+  [1m[36mTRANSACTION (127.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 129], ["name", "magikarp"], ["created_at", "2022-11-22 02:13:11.587098"], ["updated_at", "2022-11-22 02:13:11.587098"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 130], ["name", "gyarados"], ["created_at", "2022-11-22 02:13:11.708915"], ["updated_at", "2022-11-22 02:13:11.708915"]]
+  [1m[36mTRANSACTION (138.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 131], ["name", "lapras"], ["created_at", "2022-11-22 02:13:11.852914"], ["updated_at", "2022-11-22 02:13:11.852914"]]
+  [1m[36mTRANSACTION (193.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 132], ["name", "ditto"], ["created_at", "2022-11-22 02:13:12.052075"], ["updated_at", "2022-11-22 02:13:12.052075"]]
+  [1m[36mTRANSACTION (148.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 133], ["name", "eevee"], ["created_at", "2022-11-22 02:13:12.206357"], ["updated_at", "2022-11-22 02:13:12.206357"]]
+  [1m[36mTRANSACTION (105.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 134], ["name", "vaporeon"], ["created_at", "2022-11-22 02:13:12.317062"], ["updated_at", "2022-11-22 02:13:12.317062"]]
+  [1m[36mTRANSACTION (116.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 135], ["name", "jolteon"], ["created_at", "2022-11-22 02:13:12.438577"], ["updated_at", "2022-11-22 02:13:12.438577"]]
+  [1m[36mTRANSACTION (127.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 136], ["name", "flareon"], ["created_at", "2022-11-22 02:13:12.571671"], ["updated_at", "2022-11-22 02:13:12.571671"]]
+  [1m[36mTRANSACTION (105.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 137], ["name", "porygon"], ["created_at", "2022-11-22 02:13:12.682270"], ["updated_at", "2022-11-22 02:13:12.682270"]]
+  [1m[36mTRANSACTION (126.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 138], ["name", "omanyte"], ["created_at", "2022-11-22 02:13:12.814202"], ["updated_at", "2022-11-22 02:13:12.814202"]]
+  [1m[36mTRANSACTION (116.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 139], ["name", "omastar"], ["created_at", "2022-11-22 02:13:12.936195"], ["updated_at", "2022-11-22 02:13:12.936195"]]
+  [1m[36mTRANSACTION (138.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 140], ["name", "kabuto"], ["created_at", "2022-11-22 02:13:13.079873"], ["updated_at", "2022-11-22 02:13:13.079873"]]
+  [1m[36mTRANSACTION (116.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 141], ["name", "kabutops"], ["created_at", "2022-11-22 02:13:13.201656"], ["updated_at", "2022-11-22 02:13:13.201656"]]
+  [1m[36mTRANSACTION (149.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 142], ["name", "aerodactyl"], ["created_at", "2022-11-22 02:13:13.356488"], ["updated_at", "2022-11-22 02:13:13.356488"]]
+  [1m[36mTRANSACTION (149.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 143], ["name", "snorlax"], ["created_at", "2022-11-22 02:13:13.510853"], ["updated_at", "2022-11-22 02:13:13.510853"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 144], ["name", "articuno"], ["created_at", "2022-11-22 02:13:13.632741"], ["updated_at", "2022-11-22 02:13:13.632741"]]
+  [1m[36mTRANSACTION (127.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.0ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 145], ["name", "zapdos"], ["created_at", "2022-11-22 02:13:13.764991"], ["updated_at", "2022-11-22 02:13:13.764991"]]
+  [1m[36mTRANSACTION (116.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 146], ["name", "moltres"], ["created_at", "2022-11-22 02:13:13.886992"], ["updated_at", "2022-11-22 02:13:13.886992"]]
+  [1m[36mTRANSACTION (115.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.2ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 147], ["name", "dratini"], ["created_at", "2022-11-22 02:13:14.008257"], ["updated_at", "2022-11-22 02:13:14.008257"]]
+  [1m[36mTRANSACTION (127.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 148], ["name", "dragonair"], ["created_at", "2022-11-22 02:13:14.141195"], ["updated_at", "2022-11-22 02:13:14.141195"]]
+  [1m[36mTRANSACTION (105.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 149], ["name", "dragonite"], ["created_at", "2022-11-22 02:13:14.251551"], ["updated_at", "2022-11-22 02:13:14.251551"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.1ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 150], ["name", "mewtwo"], ["created_at", "2022-11-22 02:13:14.373434"], ["updated_at", "2022-11-22 02:13:14.373434"]]
+  [1m[36mTRANSACTION (116.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (3.3ms)[0m  [1m[32mINSERT INTO "characters" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 151], ["name", "mew"], ["created_at", "2022-11-22 02:13:14.494807"], ["updated_at", "2022-11-22 02:13:14.494807"]]
+  [1m[36mTRANSACTION (137.9ms)[0m  [1m[36mcommit transaction[0m
