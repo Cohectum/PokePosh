@@ -1,0 +1,329 @@
+Started GET "/" for ::1 at 2022-11-21 18:03:49 -0600
+  [1m[35m (160.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (136.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 9 pending migrations:
+
+20221121225943_create_customers.rb
+20221121230136_create_orders.rb
+20221121230224_create_shipments.rb
+20221121230417_create_products.rb
+20221121230518_create_characters.rb
+20221121230624_create_custom_products.rb
+20221121230734_create_order_products.rb
+20221122000152_devise_create_admin_users.rb
+20221122000200_create_active_admin_comments.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20221121225943)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "title" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCustomers (20221121225943)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "title" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121225943"]]
+  [1m[36mTRANSACTION (537.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrders (20221121230136)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "order_date" date, "order_subtotal" decimal, "order_tax_rate" decimal, "order_total" decimal, "order_state" varchar, "order_address" varchar, "order_postal_code" varchar, "order_province" varchar, "order_tracking_number" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230136"]]
+  [1m[36mTRANSACTION (109.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateShipments (20221121230224)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "shipments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "shipment_date" date, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230224"]]
+  [1m[36mTRANSACTION (128.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20221121230417)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230417"]]
+  [1m[36mTRANSACTION (129.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCharacters (20221121230518)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "characters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230518"]]
+  [1m[36mTRANSACTION (108.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCustomProducts (20221121230624)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "custom_products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230624"]]
+  [1m[36mTRANSACTION (106.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrderProducts (20221121230734)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "order_products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "price" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221121230734"]]
+  [1m[36mTRANSACTION (119.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateAdminUsers (20221122000152)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221122000152"]]
+  [1m[36mTRANSACTION (148.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveAdminComments (20221122000200)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "active_admin_comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "namespace" varchar, "body" text, "resource_type" varchar, "resource_id" integer, "author_type" varchar, "author_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_admin_comments_on_resource" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_admin_comments_on_author" ON "active_admin_comments" ("author_type", "author_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221122000200"]]
+  [1m[36mTRANSACTION (98.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-22 00:04:50.501294"], ["updated_at", "2022-11-22 00:04:50.501294"]]
+  [1m[36mTRANSACTION (126.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-11-21 18:05:28 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:6
+  Rendered products/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1282)
+  Rendered layout layouts/application.html.erb (Duration: 4712.4ms | Allocations: 296425)
+Completed 200 OK in 4766ms (Views: 4723.5ms | ActiveRecord: 0.9ms | Allocations: 301642)
+
+
+Started GET "/admin" for ::1 at 2022-11-21 18:05:37 -0600
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms | Allocations: 432)
+
+
+Started GET "/admin/login" for ::1 at 2022-11-21 18:05:37 -0600
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering layout /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/shared/_links.erb (Duration: 1.1ms | Allocations: 719)
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 54.0ms | Allocations: 10316)
+  Rendered layout /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb (Duration: 244.4ms | Allocations: 21903)
+Completed 200 OK in 274ms (Views: 248.3ms | ActiveRecord: 3.6ms | Allocations: 39730)
+
+
+Started POST "/admin/login" for ::1 at 2022-11-21 18:05:47 -0600
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (2.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 21ms (ActiveRecord: 2.5ms | Allocations: 3158)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  Rendering layout /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/shared/_links.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 11.8ms | Allocations: 6602)
+  Rendered layout /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb (Duration: 220.8ms | Allocations: 17181)
+Completed 200 OK in 412ms (Views: 221.9ms | ActiveRecord: 0.0ms | Allocations: 18528)
+
+
+Started POST "/admin/login" for ::1 at 2022-11-21 18:05:53 -0600
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.9ms | Allocations: 1328)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  Rendering layout /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/shared/_links.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 6.4ms | Allocations: 6034)
+  Rendered layout /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb (Duration: 206.2ms | Allocations: 16613)
+Completed 200 OK in 372ms (Views: 207.2ms | ActiveRecord: 0.0ms | Allocations: 17055)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  [1m[36mAdminUser Create (3.6ms)[0m  [1m[32mINSERT INTO "admin_users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "admin@example.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-11-22 00:08:53.571004"], ["updated_at", "2022-11-22 00:08:53.571004"]]
+  [1m[36mTRANSACTION (690.8ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/admin/login" for ::1 at 2022-11-21 18:09:01 -0600
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Update (2.6ms)[0m  [1m[33mUPDATE "admin_users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["remember_created_at", "2022-11-22 00:09:01.306306"], ["updated_at", "2022-11-22 00:09:01.306608"], ["id", 1]]
+  [1m[36mTRANSACTION (115.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 368ms (ActiveRecord: 119.7ms | Allocations: 10108)
+
+
+Started GET "/admin" for ::1 at 2022-11-21 18:09:01 -0600
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb (Duration: 175.4ms | Allocations: 13976)
+Completed 200 OK in 208ms (Views: 177.4ms | ActiveRecord: 0.9ms | Allocations: 16789)
+
+
+Started GET "/admin/admin_users" for ::1 at 2022-11-21 18:09:04 -0600
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (1.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mAdminUser Load (1.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 274.7ms | Allocations: 28817)
+Completed 200 OK in 313ms (Views: 276.2ms | ActiveRecord: 2.3ms | Allocations: 32171)
+
+
+Started GET "/admin/admin_users/new" for ::1 at 2022-11-21 18:09:06 -0600
+Processing by Admin::AdminUsersController#new as HTML
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 175.0ms | Allocations: 20696)
+Completed 200 OK in 191ms (Views: 177.6ms | ActiveRecord: 0.9ms | Allocations: 22496)
+
+
+Started POST "/admin/admin_users" for ::1 at 2022-11-21 18:09:46 -0600
+Processing by Admin::AdminUsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"cam.foy02@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "cam.foy02@gmail.com"], ["LIMIT", 1]]
+  [1m[36mAdminUser Create (3.2ms)[0m  [1m[32mINSERT INTO "admin_users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "cam.foy02@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-11-22 00:09:46.726086"], ["updated_at", "2022-11-22 00:09:46.726086"]]
+  [1m[36mTRANSACTION (471.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/admin_users/2
+Completed 302 Found in 652ms (ActiveRecord: 476.3ms | Allocations: 7767)
+
+
+Started GET "/admin/admin_users/2" for ::1 at 2022-11-21 18:09:47 -0600
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveAdmin::Comment Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "AdminUser"], ["resource_id", 2], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "AdminUser"], ["resource_id", 2], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb (Duration: 316.1ms | Allocations: 45987)
+Completed 200 OK in 333ms (Views: 313.7ms | ActiveRecord: 6.9ms | Allocations: 49029)
+
+
+Started GET "/admin/logout" for ::1 at 2022-11-21 18:09:51 -0600
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Update (2.8ms)[0m  [1m[33mUPDATE "admin_users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2022-11-22 00:09:51.387521"], ["id", 1]]
+  [1m[36mTRANSACTION (131.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 150ms (ActiveRecord: 135.0ms | Allocations: 4312)
+
+
+Started GET "/admin" for ::1 at 2022-11-21 18:09:51 -0600
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Started GET "/admin/login" for ::1 at 2022-11-21 18:09:51 -0600
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering layout /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/shared/_links.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 2.9ms | Allocations: 6037)
+  Rendered layout /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb (Duration: 216.4ms | Allocations: 16626)
+Completed 200 OK in 228ms (Views: 217.1ms | ActiveRecord: 0.0ms | Allocations: 17211)
+
+
+Started POST "/admin/login" for ::1 at 2022-11-21 18:10:02 -0600
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"cam.foy02@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "cam.foy02@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Update (3.0ms)[0m  [1m[33mUPDATE "admin_users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["remember_created_at", "2022-11-22 00:10:02.784098"], ["updated_at", "2022-11-22 00:10:02.784334"], ["id", 2]]
+  [1m[36mTRANSACTION (108.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 280ms (ActiveRecord: 112.0ms | Allocations: 5181)
+
+
+Started GET "/admin" for ::1 at 2022-11-21 18:10:02 -0600
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb (Duration: 172.2ms | Allocations: 13206)
+Completed 200 OK in 183ms (Views: 172.8ms | ActiveRecord: 0.8ms | Allocations: 14651)
+
+
+Started GET "/admin/admin_users" for ::1 at 2022-11-21 18:10:05 -0600
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 222.4ms | Allocations: 26969)
+Completed 200 OK in 236ms (Views: 222.0ms | ActiveRecord: 1.9ms | Allocations: 28650)
+
+
+Started GET "/admin/comments" for ::1 at 2022-11-21 18:10:07 -0600
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mActiveAdmin::Comment Count (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ?[0m  [["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Load (0.9ms)[0m  [1m[34mSELECT "active_admin_comments".* FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ? ORDER BY "active_admin_comments"."id" desc LIMIT ? OFFSET ?[0m  [["namespace", "admin"], ["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mActiveAdmin::Comment Pluck (1.0ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."resource_type" FROM "active_admin_comments" ORDER BY resource_type asc[0m
+  [1m[36mActiveAdmin::Comment Pluck (0.9ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."author_type" FROM "active_admin_comments" ORDER BY author_type asc[0m
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 317.5ms | Allocations: 32041)
+Completed 200 OK in 334ms (Views: 315.8ms | ActiveRecord: 4.9ms | Allocations: 34634)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-11-21 18:10:08 -0600
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb
+  Rendered /home/cfoy/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb (Duration: 183.0ms | Allocations: 13473)
+Completed 200 OK in 195ms (Views: 183.6ms | ActiveRecord: 0.9ms | Allocations: 14895)
+
+

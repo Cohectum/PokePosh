@@ -1,7 +1,6 @@
 class CreateOrders < ActiveRecord::Migration[7.0]
   def change
     create_table :orders do |t|
-      t.primary_key :order_id
       t.date :order_date
       t.decimal :order_subtotal
       t.decimal :order_tax_rate
