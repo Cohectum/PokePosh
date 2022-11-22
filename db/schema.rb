@@ -51,6 +51,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_22_023216) do
 
   create_table "custom_products", force: :cascade do |t|
     t.decimal "price"
+    t.integer "character_id"
+    t.integer "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -89,6 +91,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_22_023216) do
     t.string "name"
     t.text "description"
     t.decimal "price"
+    t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
