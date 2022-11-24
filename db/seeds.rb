@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
+
 require "json"
 require "rest-client"
 require "open-uri"
@@ -38,7 +40,7 @@ end
   price = Faker::Commerce.price(range: 0..50.0)
   # category.products <<
   new_product = Product.create(
-    name:        Faker::Commerce.product_name,
+    name:        Faker::Commerce.unique.product_name,
     description: Faker::Hipster.sentence,
     price:       price
   )

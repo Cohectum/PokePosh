@@ -5,7 +5,7 @@ ActiveAdmin.register OrderProduct do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :price
+   permit_params :price
   #
   # or
   #
@@ -14,5 +14,5 @@ ActiveAdmin.register OrderProduct do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  
+
 end
