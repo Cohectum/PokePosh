@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/About'
+  get 'home/Contact'
   get 'cart' => 'cart#show'
   post 'cart/add'
   post 'cart/remove'
