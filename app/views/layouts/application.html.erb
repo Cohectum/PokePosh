@@ -15,6 +15,12 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
+    <ul>
+      <%= link_to "Cart", @cart %>
+      <%= link_to "Products", products_path %>
+      <%= link_to "Categories", categories_path %>
+    </ul>
+
     <%= form_tag("/products/search", :method => "get") do%>
       <%= text_field_tag :search, params[:search], placeholder: "Search Categories (Leave blank for all items in category)" %> -->
       <%= select_tag 'category', options_for_select(Category.all.map{|el| [el.name, el.id]}), :prompt => "All Categories" %>

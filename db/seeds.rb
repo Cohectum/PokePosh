@@ -25,10 +25,10 @@ pokemons = JSON.parse(pokemon_list)
   new_pokemon.save
 end
 
-5.times do |index|
+10.times do |index|
   new_category = Category.create(
     id:   index,
-    name: Faker::Commerce.department
+    name: Faker::Commerce.unique.department
   )
   new_category.save
   puts new_category.name
@@ -36,7 +36,7 @@ end
 
 # replace with100
 10.times do |index|
-  category = Category.find(rand(0..4))
+  category = Category.find(rand(0..9))
   price = Faker::Commerce.price(range: 0..50.0)
   # category.products <<
   new_product = Product.create(

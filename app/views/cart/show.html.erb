@@ -1,2 +1,6 @@
-<h1>Cart#show</h1>
-<p>Find me in app/views/cart/show.html.erb</p>
+<h1>Your Cart</h1>
+<%= render "cart/order_products" %>
+<p>Current Total: <%= @cart.total%> </p>
+<%= form_with(url: cart_checkout_path) do |f| %>
+    <%= f.submit "Checkout" %>
+<% end %>

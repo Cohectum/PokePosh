@@ -44,4 +44,8 @@ class CartController < ApplicationController
       end
     end
   end
+
+  def checkout
+
+  end
 end
