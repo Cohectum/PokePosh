@@ -1,5 +1,8 @@
 class CategoriesController < InheritedResources::Base
-  private
+
+  def index
+    @categories = Category.order(id: :asc).page(params[:page])
+  end
 
   def category_params
     params.require(:category).permit(:name)
@@ -14,4 +17,6 @@ class CategoriesController < InheritedResources::Base
                                    search: "%#{@parameter}%").order(id: :asc).page(params[:page])
     end
   end
+
+
 end

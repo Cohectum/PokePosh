@@ -2,14 +2,18 @@ class ProductsController < ApplicationController
   before_action :set_product, only: %i[show edit update destroy]
 
   def search
-    if params[:category].blank?
+    if params[:category].blank? && params[:search].blank?
       redirect_to products_path and return
+    elsif params[:category].blank?
+      @parameter = params[:search]
+      @results = Product.where("lower(name) LIKE :search OR lower(description) LIKE :search",
+                                                                     search: "%#{@parameter}%").order(id: :asc).page(params[:page])
     elsif params[:search].blank?
       @parameter = params[:category]
       @results = Product.where(category_id: params[:category]).order(id: :asc).page(params[:page])
     else
       @parameter = params[:search]
-      @results = Product.where(category_id: params[:category]).where("lower(name) LIKE :search",
+      @results = Product.where(category_id: params[:category]).where("lower(name) LIKE :search OR lower(description) LIKE :search",
                                                                      search: "%#{@parameter}%").order(id: :asc).page(params[:page])
     end
   end

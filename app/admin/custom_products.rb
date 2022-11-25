@@ -5,7 +5,7 @@ ActiveAdmin.register CustomProduct do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-   permit_params :price
+   permit_params :price, :character_id, :product_id
   #
   # or
   #
