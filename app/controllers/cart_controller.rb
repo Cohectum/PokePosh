@@ -95,20 +95,24 @@ class CartController < ApplicationController
 
   def complete
     @order = Order.find(params[:order_id])
-    Stripe.api_key = 'sk_test_51M8YIsImcZ7reNdWFyYDqUvNZFyi2eshDo1EInzxlOhqPO7JDomzCRLLHwcvzGaHX6LuPLuMnAtsNVVuvBbU8ld500R9PEwXHf'
-    @render_cart = false
-    @complete_session = Stripe::Checkout::Session.retrieve(params[:session_id]);
 
-    total = @complete_session.amount_total / 100;
-    tax = total - @order.order_subtotal
+    if @cart.order_products[0]
+      Stripe.api_key = 'sk_test_51M8YIsImcZ7reNdWFyYDqUvNZFyi2eshDo1EInzxlOhqPO7JDomzCRLLHwcvzGaHX6LuPLuMnAtsNVVuvBbU8ld500R9PEwXHf'
+      @render_cart = false
+      @complete_session = Stripe::Checkout::Session.retrieve(params[:session_id]);
 
-    @order.update(
-      order_total: total,
-      order_tax_total: tax,
-      order_state: "Paid",
-    )
+      total = @complete_session.amount_total / 100;
+      tax = total - @order.order_subtotal
 
-    @order.cart = @cart
-    @cart = null;
+      @order.update(
+        order_total: total,
+        order_tax_total: tax,
+        order_state: "Paid",
+      )
+
+      @order.cart = @cart
+
+      reset_session
+    end
   end
 end
