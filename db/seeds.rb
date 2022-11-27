@@ -21,7 +21,7 @@ pokemons = JSON.parse(pokemon_list)
     id:   pokemon_id,
     name: pokemons["results"][index]["name"]
   )
-  puts "pokemon #{index}"
+  puts "pokemon #{index} #{new_pokemon.name}"
   new_pokemon.save
 end
 

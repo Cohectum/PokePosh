@@ -1,0 +1,17 @@
+<h1>Thank you for your Order!</h1>
+<p>Status: <%= @order.order_state %></p>
+<p>Sub-Total: <%= @order.order_subtotal %></p>
+<p>Tax: <%= @order.order_tax_total %></p>
+<p>Total: <%= @order.order_total %></p>
+<h3>Items: </h3>
+<% @order.cart.order_products.each do |product| %>
+<div>
+    <ul>
+        <li>Name: <%= product.custom_product.product.name%></li>
+        <li>Pokemon: <%= product.custom_product.character.name%></li>
+        <li>Price: <%= product.price %></li>
+        <li>Quantity: <%= product.quantity %></li>
+        <li>Total: <%= product.total %></li>
+    </ul>
+</div>
+<% end %>

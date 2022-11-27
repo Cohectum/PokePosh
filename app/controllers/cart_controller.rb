@@ -1,4 +1,6 @@
 class CartController < ApplicationController
+  require 'date'
+
   def show
     @render_cart = false
   end
@@ -46,6 +48,71 @@ class CartController < ApplicationController
   end
 
   def checkout
+    @render_cart = false
+    cart = @cart;
+    checkout_items = Array.new
+    cart.order_products.each do |product, index|
+      checkout_items << {
+        price_data: {
+          currency: 'cad',
+          unit_amount: product.in_cents,
+          product_data: {
+            name: product.custom_product.product.name,
+            description: product.custom_product.product.description,
+          },
+          tax_behavior: 'exclusive',
+        },
+        quantity: product.quantity,
+      }
+    end
 
+
+    puts checkout_items
+    Stripe.api_key = 'sk_test_51M8YIsImcZ7reNdWFyYDqUvNZFyi2eshDo1EInzxlOhqPO7JDomzCRLLHwcvzGaHX6LuPLuMnAtsNVVuvBbU8ld500R9PEwXHf'
+
+    @order = Order.create(
+      order_date: Date.today,
+      order_subtotal: @cart.total,
+      order_state: "New"
+    );
+
+    @session = Stripe::Checkout::Session.create(
+      payment_method_types: ['card'],
+      success_url: cart_complete_url + "?session_id={CHECKOUT_SESSION_ID}&order_id=#{@order.id}",
+      line_items: checkout_items,
+      cancel_url: cart_url,
+      automatic_tax: { enabled: true },
+      mode: "payment"
+    )
+
+    @order.update(
+      stripe_id: @session.id
+    )
+
+
+    redirect_to @session.url, allow_other_host: true
+  end
+
+  def complete
+    @order = Order.find(params[:order_id])
+
+    if @cart.order_products[0]
+      Stripe.api_key = 'sk_test_51M8YIsImcZ7reNdWFyYDqUvNZFyi2eshDo1EInzxlOhqPO7JDomzCRLLHwcvzGaHX6LuPLuMnAtsNVVuvBbU8ld500R9PEwXHf'
+      @render_cart = false
+      @complete_session = Stripe::Checkout::Session.retrieve(params[:session_id]);
+
+      total = @complete_session.amount_total / 100;
+      tax = total - @order.order_subtotal
+
+      @order.update(
+        order_total: total,
+        order_tax_total: tax,
+        order_state: "Paid",
+      )
+
+      @order.cart = @cart
+
+      reset_session
+    end
   end
 end
