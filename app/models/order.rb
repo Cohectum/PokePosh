@@ -1,5 +1,6 @@
 class Order < ApplicationRecord
   has_one :shipment
-  belongs_to :customer
+  has_one :cart
+  has_one :address
 
 end

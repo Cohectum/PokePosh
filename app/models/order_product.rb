@@ -5,4 +5,8 @@ class OrderProduct < ApplicationRecord
   def total
     custom_product.price * quantity
   end
+
+  def in_cents
+    (custom_product.price * 100).to_i
+  end
 end

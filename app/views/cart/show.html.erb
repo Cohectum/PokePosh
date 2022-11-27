@@ -1,6 +1,12 @@
 <h1>Your Cart</h1>
 <%= render "cart/order_products" %>
 <p>Current Total: <%= @cart.total%> </p>
-<%= form_with(url: cart_checkout_path) do |f| %>
-    <%= f.submit "Checkout" %>
-<% end %>
+
+<%= button_to "Checkout", cart_checkout_path,
+    method: :post,
+    data: {turbo: false},
+    params: {
+        checkout: {
+            cart: @cart
+        }
+    }%>

@@ -6,10 +6,7 @@ class CreateOrders < ActiveRecord::Migration[7.0]
       t.decimal :order_tax_rate
       t.decimal :order_total
       t.string :order_state
-      t.string :order_address
-      t.string :order_postal_code
-      t.string :order_province
-      t.integer :order_tracking_number
+      t.string :stripe_id
 
       t.timestamps
     end
