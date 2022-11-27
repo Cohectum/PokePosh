@@ -1,4 +1,5 @@
 class CartController < ApplicationController
+  require 'date'
 
   def show
     @render_cart = false
@@ -65,23 +66,49 @@ class CartController < ApplicationController
       }
     end
 
-    puts 'test'
 
     puts checkout_items
     Stripe.api_key = 'sk_test_51M8YIsImcZ7reNdWFyYDqUvNZFyi2eshDo1EInzxlOhqPO7JDomzCRLLHwcvzGaHX6LuPLuMnAtsNVVuvBbU8ld500R9PEwXHf'
 
+    @order = Order.create(
+      order_date: Date.today,
+      order_subtotal: @cart.total,
+      order_state: "New"
+    );
+
     @session = Stripe::Checkout::Session.create(
       payment_method_types: ['card'],
-      success_url: cart_complete_url,
+      success_url: cart_complete_url + "?session_id={CHECKOUT_SESSION_ID}&order_id=#{@order.id}",
       line_items: checkout_items,
       cancel_url: cart_url,
       automatic_tax: { enabled: true },
       mode: "payment"
     )
 
-    redirect_to session.url, allow_other_host: true
+    @order.update(
+      stripe_id: @session.id
+    )
+
+
+    redirect_to @session.url, allow_other_host: true
   end
 
   def complete
+    @order = Order.find(params[:order_id])
+    Stripe.api_key = 'sk_test_51M8YIsImcZ7reNdWFyYDqUvNZFyi2eshDo1EInzxlOhqPO7JDomzCRLLHwcvzGaHX6LuPLuMnAtsNVVuvBbU8ld500R9PEwXHf'
+    @render_cart = false
+    @complete_session = Stripe::Checkout::Session.retrieve(params[:session_id]);
+
+    total = @complete_session.amount_total / 100;
+    tax = total - @order.order_subtotal
+
+    @order.update(
+      order_total: total,
+      order_tax_total: tax,
+      order_state: "Paid",
+    )
+
+    @order.cart = @cart
+    @cart = null;
   end
 end
