@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :customers do
+    get "/customers/sign_out" => "devise/sessions#destroy", :as => :destroy_customer_session
+  end
   get 'home/About'
   get 'home/Contact'
   get 'cart' => 'cart#show'
@@ -16,7 +19,7 @@ Rails.application.routes.draw do
   resources :products
   # resources :shipments
    resources :orders
-  # resources :customers
+   resources :customers
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
