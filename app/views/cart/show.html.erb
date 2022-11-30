@@ -1,12 +1,36 @@
 <h1>Your Cart</h1>
 <%= render "cart/order_products" %>
 <p>Current Total: <%= @cart.total%> </p>
+<% address_not_used = true %>
 
-<%= button_to "Checkout", cart_checkout_path,
-    method: :post,
-    data: {turbo: false},
-    params: {
-        checkout: {
-            cart: @cart
-        }
-    }%>
+<%= form_with(url: cart_update_prices_path) do |form| %>
+    <%= form.select 'tax_province', options_for_select(Province.all.map{|el| [el.name, el.id]}), :prompt => "Please Select a Province" %>
+    <%= form.submit "Calculate Price"%>
+<% end %>
+<%= render "cart/total" %>
+<% if @cart.order_products.count > 0 %>
+    <% if customer_signed_in? %>
+        <% if current_customer.address_id %>
+        <h3>This order will use your saved address of:</h3>
+        <p><%= current_user.address.line1 %></p>
+        <p><%= current_user.address.city %></p>
+        <p><%= current_user.address.province.name %></p>
+        <p><%= current_user.address.postal_code %></p>
+        <% address_not_used = false %>
+        <% end %>
+    <% end %>
+    <% if address_not_used %>
+        <h2>Please Enter your shipping address</h2>
+        <%= form_tag cart_checkout_path, :method => "get", :data => {turbo: false} do |f| %>
+            <%= select_tag 'province', options_for_select(Province.all.map{|el| [el.name, el.id]}), :prompt => "Please Select a Province" %>
+            <br>
+            <%= text_field_tag :line1, params[:line1], placeholder: "Street Address: 123 Example St" %>
+            <%= text_field_tag :postal_code, params[:postal_code], placeholder: "Postal Code: A2A2A2", maxlength: 6 %>
+            <%= text_field_tag :city, params[:city], placeholder: "City" %>
+            <br>
+            <%= submit_tag 'Checkout with Stripe' %>
+        <% end %>
+    <% end %>
+<% end %>
+
+

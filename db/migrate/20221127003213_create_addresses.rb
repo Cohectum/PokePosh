@@ -3,9 +3,9 @@ class CreateAddresses < ActiveRecord::Migration[7.0]
     create_table :addresses do |t|
       t.string :line1
       t.string :city
-      t.string :province
+      t.integer :province_id
       t.string :postal_code
-      t.string :country
+      t.string :customer_id
 
       t.timestamps
     end

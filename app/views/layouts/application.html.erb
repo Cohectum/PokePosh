@@ -20,6 +20,11 @@
       <%= link_to "Cart", @cart %>
       <%= link_to "Products", products_path %>
       <%= link_to "Categories", categories_path %>
+      <% if customer_signed_in? %>
+      <% else %>
+        <%= link_to "Sign In", new_customer_session_path %>
+        <%= link_to "Register", new_customer_registration_path %>
+      <% end %>
     </ul>
 
     <%= form_tag("/products/search", :method => "get") do%>

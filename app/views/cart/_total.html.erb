@@ -1,0 +1,10 @@
+
+<%= turbo_frame_tag "totals" do%>
+    <% if @province %>
+        <h3>Subtotal: $<%= @cart.total %></h3>
+        <h3>PST: $<%= sprintf('%.2f', (@cart.total * @province.pst))  %></h3>
+        <h3>GST: $<%= sprintf('%.2f', (@cart.total * @province.gst)) %></h3>
+        <h3>HST: $<%= sprintf('%.2f', (@cart.total * @province.hst)) %></h3>
+        <h3>Total: $<%= sprintf('%.2f', (@cart.total + (@cart.total * @province.pst) + (@cart.total * @province.gst) + (@cart.total * @province.hst))) %></h3>
+    <% end %>
+<% end %>
