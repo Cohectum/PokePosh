@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_29_211211) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_29_225116) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -28,9 +28,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_211211) do
   create_table "addresses", force: :cascade do |t|
     t.string "line1"
     t.string "city"
-    t.string "province"
+    t.integer "province_id"
     t.string "postal_code"
-    t.string "country"
+    t.string "customer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -78,6 +78,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_211211) do
     t.string "last_name"
     t.string "title"
     t.string "password_digest"
+    t.integer "address_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
@@ -112,6 +113,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_211211) do
     t.decimal "order_total"
     t.string "order_state"
     t.string "stripe_id"
+    t.integer "address_id"
+    t.integer "customer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -121,6 +124,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_211211) do
     t.text "description"
     t.decimal "price"
     t.integer "category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "provinces", force: :cascade do |t|
+    t.string "name"
+    t.decimal "pst"
+    t.decimal "gst"
+    t.decimal "hst"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

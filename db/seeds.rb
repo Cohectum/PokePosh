@@ -57,3 +57,18 @@ end
   puts index
   new_product.save
 end
+
+
+Province.create(name: "AB", gst: 0.05, pst: 0, hst: 0)
+Province.create(name: "BC", gst: 0.05, pst: 0.07, hst: 0)
+Province.create(name: "MB", gst: 0.05, pst: 0.07, hst: 0)
+Province.create(name: "NB", gst: 0, pst: 0, hst: 0.15)
+Province.create(name: "NL", gst: 0, pst: 0, hst: 0.15)
+Province.create(name: "NT", gst: 0.05, pst: 0, hst: 0)
+Province.create(name: "NS", gst: 0, pst: 0, hst: 0.15)
+Province.create(name: "NU", gst: 0.05, pst: 0, hst: 0)
+Province.create(name: "ON", gst: 0, pst: 0, hst: 0.13)
+Province.create(name: "PE", gst: 0, pst: 0, hst: 0.15)
+Province.create(name: "QC", gst: 0.05, pst: 0.09975, hst: 0)
+Province.create(name: "SK", gst: 0.05, pst: 0.06, hst: 0)
+Province.create(name: "YT", gst: 0.05, pst: 0, hst: 0)

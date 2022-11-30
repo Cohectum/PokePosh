@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'cart/complete'
   post 'cart/add'
   post 'cart/remove'
+  post 'cart/update_prices'
   get 'cart/checkout' => 'cart#checkout'
   post 'cart/checkout' => 'cart#checkout'
   get '/products/search'
